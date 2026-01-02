@@ -16,8 +16,8 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
-  overflow: hidden;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Header Section */
@@ -28,17 +28,17 @@ header {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* Logo Styles */
 .logo {
-  width: 250px; /* Reduced size for a more refined look */
-  height: 250px;
+  width: 200px; /* Reduced size for a more balanced look */
+  height: 200px;
   margin-bottom: 40px;
   animation: float 3s infinite ease-in-out;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  filter: brightness(1.2); /* Subtle brightening effect */
+  filter: brightness(1.4); /* Slightly brighter */
   box-shadow: 0px 0px 60px rgba(255, 140, 0, 0.6); /* Soft glowing shadow */
 }
 
@@ -56,9 +56,10 @@ h1 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 
 /* Call to Action (Button) */
@@ -69,7 +70,7 @@ p {
   font-weight: bold;
   border-radius: 40px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -81,7 +82,7 @@ p {
 
 /* About and How It Works Sections */
 .about, .how-it-works {
-  width: 90%;
+  width: 80%;
   max-width: 1000px;
   padding: 40px;
   background: rgba(0, 0, 0, 0.6);
@@ -89,6 +90,7 @@ p {
   margin-top: 50px;
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  color: #ffffff;
 }
 
 .about h2, .how-it-works h2 {
