@@ -1,24 +1,78 @@
-/* Logo Styles */
-.logo {
-  width: 180px; /* Increased logo size */
-  margin-bottom: 30px;
-  animation: float 3s infinite ease-in-out;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-  filter: brightness(1.5); /* Makes the logo brighter */
-  border: 5px solid #ff8c00; /* Adding a subtle border */
-  border-radius: 50%; /* Optional: Adds round corners to the logo */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo:hover {
-  transform: scale(1.2); /* Slightly increase size on hover */
-  box-shadow: 0px 0px 30px rgba(255, 140, 0, 0.8); /* Add a glowing shadow effect */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #2e3d59, #1f2a39);
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
 }
 
 /* Header Section */
 header {
-  text-align: center;
-  padding: 80px 20px;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.8);
-  animation: fadeIn 1.8s ease-out;
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Logo Styles */
+.logo {
+  width: 300px; /* Increase size to make it much larger */
+  height: 300px;
+  margin-bottom: 40px;
+  animation: float 3s infinite ease-in-out;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  filter: brightness(1.6); /* Makes the logo brighter */
+  border-radius: 50%; /* Optional: round the edges */
+  box-shadow: 0px 0px 50px rgba(255, 140, 0, 0.9); /* Glowing shadow */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Call to Action (Button) */
+.cta-button {
+  padding: 20px 50px;
+  background: #ff4500;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: #e03e00;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.8);
+}
+
+/* About and How It Works Sections */
+.about, .how-it-works {
+  display: none;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
