@@ -1,23 +1,29 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7fc;
-    color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-image: url('holy-grail-logo.png'); /* Background logo */
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed; /* Keeps the image in place while scrolling */
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Container */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
     border-radius: 10px;
+    text-align: center;
 }
 
 /* Header */
@@ -25,19 +31,22 @@ header {
     padding: 80px 0;
     text-align: center;
     color: #fff;
-    border-radius: 8px 8px 0 0;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 10px;
     font-weight: 400;
     opacity: 0.8;
@@ -45,7 +54,7 @@ header p {
 
 button {
     padding: 16px 30px;
-    background-color: #0052cc;
+    background-color: #00A1FF;
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -56,16 +65,16 @@ button {
 }
 
 button:hover {
-    background-color: #0041a8;
+    background-color: #008ccf;
     transform: translateY(-2px);
 }
 
 /* Main Content */
 main {
     padding: 30px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85); /* Lighter semi-transparent background */
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-top: -20px;
     position: relative;
     z-index: 1;
@@ -76,6 +85,8 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 p {
@@ -84,38 +95,34 @@ p {
     color: #555;
 }
 
-/* Links Section */
-.links-section {
+/* Feature Section */
+.why-choose {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 
-.links-section h3 {
+.feature {
+    background-color: #fff;
     color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.feature h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
-.links-section p {
+.feature p {
     font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.links-section code {
-    display: block;
-    padding: 16px;
-    background-color: #1e1e1e;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Footer */
@@ -131,4 +138,5 @@ footer {
 footer p {
     font-size: 1rem;
     margin: 0;
+    letter-spacing: 1px;
 }
