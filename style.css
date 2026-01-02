@@ -13,37 +13,40 @@ body {
   font-size: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start; /* Align items from the top */
+  height: auto;
+  min-height: 100vh;
   text-align: center;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0 20px; /* Padding on the sides */
 }
 
 /* Header Section */
 header {
-  padding: 50px 20px;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 /* Logo Styles */
 .logo {
-  width: 200px; /* Reduced size for a more balanced look */
-  height: 200px;
+  width: 350px; /* Increased size for more prominence */
+  height: 350px;
   margin-bottom: 40px;
   animation: float 3s infinite ease-in-out;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  filter: brightness(1.4); /* Slightly brighter */
-  box-shadow: 0px 0px 60px rgba(255, 140, 0, 0.6); /* Soft glowing shadow */
+  filter: brightness(1.5); /* Makes the logo brighter */
+  box-shadow: 0px 0px 80px rgba(255, 140, 0, 0.7); /* Glowing shadow effect */
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.15); /* Slightly increase size on hover */
 }
 
 /* Header Text */
@@ -56,7 +59,7 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 30px;
   color: #ffffff;
@@ -64,59 +67,10 @@ p {
 
 /* Call to Action (Button) */
 .cta-button {
-  padding: 15px 40px;
+  padding: 20px 50px;
   background: #ff4500;
   color: #fff;
   font-weight: bold;
   border-radius: 40px;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background: #e03e00;
-  transform: scale(1.1);
-  box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.8);
-}
-
-/* About and How It Works Sections */
-.about, .how-it-works {
-  width: 80%;
-  max-width: 1000px;
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
-  margin-top: 50px;
-  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  color: #ffffff;
-}
-
-.about h2, .how-it-works h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #ff8c00;
-}
-
-.about ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.about li {
-  font-size: 1.15rem;
-  margin: 12px 0;
-}
-
-.about p, .how-it-works p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-/* Animations */
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
+  font-size: 1.2r
