@@ -3,72 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holy Grail - Fantasy Premier League Data</title>
-  <style>
-    /* Inline CSS for the landing page */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: white;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    a {
-      color: #ff8c00;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #ff8c00;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-
-    .cta-button:hover {
-      background-color: #cc7000;
-    }
-  </style>
+  <title>Holy Grail FPL</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Holy Grail</h1>
-    <p>Your live Fantasy Premier League data resource.</p>
-    <a class="cta-button" href="mailto:your-email@example.com">Request Access</a>
+    <div class="header-content">
+      <!-- Holy Grail Logo -->
+      <img src="holy-grail-logo.png" alt="Holy Grail Logo" class="logo">
+      <h1>Welcome to Holy Grail</h1>
+      <p>Your live Fantasy Premier League data resource.</p>
+      <a href="mailto:your-email@example.com" class="cta-button">Request Access</a>
+    </div>
   </header>
-  
-  <section>
+
+  <section class="about">
     <h2>What Holy Grail Is</h2>
     <p>Holy Grail provides two live datasets updated via automated scripts, designed for instant analysis in Excel, Google Sheets, Python, or AI tools.</p>
     <ul>
@@ -79,7 +28,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="how-it-works">
     <h2>How It Works</h2>
     <p>Access is granted manually via email. Once subscribed, you'll receive a link to the live datasets, which are updated automatically.</p>
   </section>
