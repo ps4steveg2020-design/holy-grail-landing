@@ -7,49 +7,37 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #1e2a38, #0a1a2f);
+  background-image: url('holy-grail-logo.png'); /* Set background image */
+  background-size: cover; /* Makes the image cover the whole page */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Fixed background when scrolling */
   color: #ffffff;
   line-height: 1.6;
   font-size: 16px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items from the top */
+  justify-content: flex-start; /* Align items from the top */
   height: auto;
   min-height: 100vh;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  padding: 0 20px; /* Padding on the sides */
+  overflow-x: hidden;
+  padding: 20px;
+  padding-top: 100px; /* Gives space from the top */
 }
 
 /* Header Section */
 header {
-  padding: 80px 20px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: auto;
   margin-bottom: 50px;
+  position: relative;
 }
 
-/* Logo Styles */
-.logo {
-  width: 350px; /* Increased size for more prominence */
-  height: 350px;
-  margin-bottom: 40px;
-  animation: float 3s infinite ease-in-out;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-  filter: brightness(1.5); /* Makes the logo brighter */
-  box-shadow: 0px 0px 80px rgba(255, 140, 0, 0.7); /* Glowing shadow effect */
-}
-
-.logo:hover {
-  transform: scale(1.15); /* Slightly increase size on hover */
-}
-
-/* Header Text */
+/* Removed logo from the header */
 h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -73,4 +61,53 @@ p {
   font-weight: bold;
   border-radius: 40px;
   text-decoration: none;
-  font-size: 1.2r
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e03e00;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(255, 140, 0, 0.8);
+}
+
+/* About and How It Works Sections */
+.about, .how-it-works {
+  width: 80%;
+  max-width: 1000px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-top: 50px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+}
+
+.about h2, .how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff8c00;
+}
+
+.about ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.about li {
+  font-size: 1.15rem;
+  margin: 12px 0;
+}
+
+.about p, .how-it-works p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
